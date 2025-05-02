@@ -2,13 +2,13 @@
 <rss version="2.0">
     <channel>
       <title>GWAS Explorer</title>
-      <link>https://https://www.gwasexplorer.com</link>
+      <link>https://www.gwasexplorer.com</link>
       <description>Last 10 notes on GWAS Explorer</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
     <title>index</title>
-    <link>https://https://www.gwasexplorer.com/</link>
-    <guid>https://https://www.gwasexplorer.com/</guid>
+    <link>https://www.gwasexplorer.com/</link>
+    <guid>https://www.gwasexplorer.com/</guid>
     <description>This is another update.</description>
     <pubDate>Fri, 02 May 2025 11:13:50 GMT</pubDate>
   </item>
