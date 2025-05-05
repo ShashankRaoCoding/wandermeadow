@@ -1,0 +1,16 @@
+
+
+<div> 
+    <h1>File Reader</h1>
+    <input type="file" id="file-input" />
+    <label for="x-attr">X-Axis:</label>
+    <select id="x-attr"></select>
+    <label for="y-attr">Y-Axis:</label>
+    <select id="y-attr"></select>
+    <div id="message"></div>
+    <pre id="file-content"></pre>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script src="https://shashankraocoding.github.io/wandermeadow/Website-Resources/Javascript/quickPlot.js"></script>
+</div>
+
+
