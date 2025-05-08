@@ -1,15 +1,7 @@
-// Dynamically load Chart.js from the CDN
-const script = document.createElement('script');
+const script = document.createElement('link');
 script.src = "https://cdn.jsdelivr.net/npm/chart.js";
-script.onload = () => {
-    console.log("Chart.js loaded successfully.");
-    // Initialize your chart code here, for example:
-    // renderChart();
-};
-script.onerror = () => {
-    console.error("Failed to load Chart.js.");
-};
 document.head.appendChild(script);
+
 const fileInput = document.getElementById(`file-input`);
 const fileContentDisplay = document.getElementById(`file-content`);
 const messageDisplay = document.getElementById(`message`);
