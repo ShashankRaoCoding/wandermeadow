@@ -6,11 +6,17 @@
       <description>Last 10 notes on Wander Meadow</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Into the Mind</title>
+    <link>https://shashankraocoding.github.io/wandermeadow/Projects/Into-the-Mind</link>
+    <guid>https://shashankraocoding.github.io/wandermeadow/Projects/Into-the-Mind</guid>
+    <description>Preface: This book (in progress) is written based solely on my understanding of various concepts.</description>
+    <pubDate>Thu, 08 May 2025 17:26:27 GMT</pubDate>
+  </item><item>
     <title>Literature</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Projects/Literature</link>
     <guid>https://shashankraocoding.github.io/wandermeadow/Projects/Literature</guid>
     <description> Into the Mind Into the Mind explores how humans learn about the world, why we organise as societies, and how we can structure these ideas - wait, what are ideas!? Think Pythonically Other tutorials will teach you python.</description>
-    <pubDate>Thu, 08 May 2025 17:07:50 GMT</pubDate>
+    <pubDate>Thu, 08 May 2025 17:08:25 GMT</pubDate>
   </item><item>
     <title>Wander Meadow</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</link>
@@ -35,12 +41,6 @@
     <guid>https://shashankraocoding.github.io/wandermeadow/Projects/Music</guid>
     <description></description>
     <pubDate>Mon, 05 May 2025 16:27:20 GMT</pubDate>
-  </item><item>
-    <title>Into the Mind</title>
-    <link>https://shashankraocoding.github.io/wandermeadow/Projects/Into-the-Mind</link>
-    <guid>https://shashankraocoding.github.io/wandermeadow/Projects/Into-the-Mind</guid>
-    <description>Preface: This book (in progress) is written based solely on my understanding of various concepts.</description>
-    <pubDate>Mon, 05 May 2025 13:22:39 GMT</pubDate>
   </item><item>
     <title>Records from Omnisciae</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Projects/Records-from-Omnisciae</link>
