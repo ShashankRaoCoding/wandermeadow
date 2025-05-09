@@ -7,6 +7,10 @@ document.onload = function() {
 
 } 
 
+document.getElementsByClassName("readermode")[0].click() 
+
+
+
 const fileInput = document.getElementById('file-input');
 const fileContentDisplay = document.getElementById('file-content');
 const messageDisplay = document.getElementById('message');

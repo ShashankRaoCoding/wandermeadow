@@ -6,17 +6,11 @@
       <description>Last 10 notes on Wander Meadow</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>quickPlot</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/quickPlot</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/quickPlot</guid>
-    <description>QuickPlot 🔐 Visualise summary statistics for GWAS. Formatting agnostic, requires .tsv. X-Axis: Y-Axis: ID: .</description>
-    <pubDate>Fri, 09 May 2025 19:24:13 GMT</pubDate>
-  </item><item>
     <title>GWAS Explorer</title>
     <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/GWAS-Explorer</link>
     <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/GWAS-Explorer</guid>
-    <description> Note Data is not sent to our servers if a tool is marked 🔐! This is NOT the GWAS Explorer tool hosted by the NCI! GWAS Explorer Roadmap for those curious 👀 Loading Page.</description>
-    <pubDate>Fri, 09 May 2025 19:16:18 GMT</pubDate>
+    <description> Note Data is not sent to our servers! This is NOT the GWAS Explorer tool hosted by the NCI! X-Axis: Y-Axis: ID: .</description>
+    <pubDate>Fri, 09 May 2025 19:52:29 GMT</pubDate>
   </item><item>
     <title>Literature</title>
     <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Literature</link>
@@ -29,12 +23,6 @@
     <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Wander-Meadow</guid>
     <description>Hi there! Welcome to the Wander Meadow. This is my garden of digital projects, home to my personal projects, such as GWASExplorer.</description>
     <pubDate>Fri, 09 May 2025 16:40:20 GMT</pubDate>
-  </item><item>
-    <title>GWAS Explorer Roadmap</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/GWAS-Explorer-Roadmap</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/GWAS-Explorer-Roadmap</guid>
-    <description> These are the plans for the first tool quickPlot. Additional tools are planned.</description>
-    <pubDate>Fri, 09 May 2025 10:10:27 GMT</pubDate>
   </item><item>
     <title>Records from Omnisciae</title>
     <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Records-from-Omnisciae</link>
@@ -65,6 +53,18 @@
     <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/SNP_manager</guid>
     <description> Note This python library is no longer actively maintained, but is still usable as of Python 3.11.0 The Problems this Python Library Addressed are now answered to by my project: GWASExplorer.Com Project Page Summary This is a simple library and related projects made to enable faster and easier worki...</description>
     <pubDate>Sat, 03 May 2025 17:42:45 GMT</pubDate>
+  </item><item>
+    <title>Shankskit</title>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Shankskit</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Shankskit</guid>
+    <description>Project Page Summary A personal library of useful python functions I have found/built over the years.</description>
+    <pubDate>Sat, 03 May 2025 17:42:30 GMT</pubDate>
+  </item><item>
+    <title>ScreenWidgets</title>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/ScreenWidgets</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/ScreenWidgets</guid>
+    <description>Project Page Summary This is a simple Golang UI application for task management and note-taking on-the-go for Windows 11.</description>
+    <pubDate>Sat, 03 May 2025 17:42:07 GMT</pubDate>
   </item>
     </channel>
   </rss>
