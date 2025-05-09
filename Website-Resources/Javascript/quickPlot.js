@@ -108,8 +108,8 @@ function renderChart() {
                     callbacks: {
                         label: function(context) {
                             const point = context.raw;
-                            // Using <br> for line breaks in the tooltip
-                            return `ID: ${point.id}<br>${xAttr}: ${point.x}<br>${yAttr}: ${point.y}`;
+                            // Using  |  for line breaks in the tooltip 
+                            return `ID: ${point.id} | ${xAttr}: ${point.x} | ${yAttr}: ${point.y}`;
                         }
                     }
                 }
