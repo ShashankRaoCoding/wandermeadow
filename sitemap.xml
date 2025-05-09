@@ -1,7 +1,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://shashankraocoding.github.io/wandermeadow/Index</loc>
-    <lastmod>2025-05-09T16:13:50.540Z</lastmod>
-  </url><url>
     <loc>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer-Roadmap</loc>
     <lastmod>2025-05-09T10:10:27.328Z</lastmod>
   </url><url>
@@ -40,4 +37,7 @@
   </url><url>
     <loc>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</loc>
     <lastmod>2025-05-09T09:39:53.533Z</lastmod>
+  </url><url>
+    <loc>https://shashankraocoding.github.io/wandermeadow/</loc>
+    <lastmod>2025-05-09T16:13:50.540Z</lastmod>
   </url></urlset>
