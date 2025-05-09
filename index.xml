@@ -6,6 +6,12 @@
       <description>Last 10 notes on Wander Meadow</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Wander Meadow</title>
+    <link>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</link>
+    <guid>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</guid>
+    <description>Hi there! Welcome to the Wander Meadow. This is my garden of digital projects.</description>
+    <pubDate>Fri, 09 May 2025 08:33:11 GMT</pubDate>
+  </item><item>
     <title>GWAS Explorer</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer</link>
     <guid>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer</guid>
@@ -29,12 +35,6 @@
     <guid>https://shashankraocoding.github.io/wandermeadow/Projects/Literature</guid>
     <description> Into the Mind Into the Mind explores how humans learn about the world, why we organise as societies, and how we can structure these ideas - wait, what are ideas!? Think Pythonically Other tutorials will teach you python.</description>
     <pubDate>Thu, 08 May 2025 17:08:25 GMT</pubDate>
-  </item><item>
-    <title>Wander Meadow</title>
-    <link>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</link>
-    <guid>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</guid>
-    <description>Hi there! Welcome to the Wander Meadow. This is my garden of digital projects.</description>
-    <pubDate>Thu, 08 May 2025 16:52:52 GMT</pubDate>
   </item><item>
     <title>Think Pythonically</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Projects/Think-Pythonically</link>
