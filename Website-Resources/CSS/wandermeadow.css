@@ -5,6 +5,7 @@
 .container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     border-radius: 10px;
     justify-content: space-evenly;
     column-gap: 10px;
@@ -12,7 +13,7 @@
 
 .card {
     text-decoration: none;
-    width: 100%;
+    width: 30%;
     height: 100%;
     border-radius: 10px;
     background-color: #4abdbd;
