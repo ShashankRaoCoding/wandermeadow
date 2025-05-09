@@ -1,6 +1,11 @@
-const script = document.createElement('script');
-script.src = "https://cdn.jsdelivr.net/npm/chart.js";
-document.head.appendChild(script);
+document.onload = function() {
+    let link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://shashankraocoding.github.io/wandermeadow/Website-Resources/CSS/wandermeadow.css";
+    document.head.appendChild(link);
+    
+
+} 
 
 const fileInput = document.getElementById('file-input');
 const fileContentDisplay = document.getElementById('file-content');
