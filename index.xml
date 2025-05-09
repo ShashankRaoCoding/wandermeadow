@@ -6,11 +6,17 @@
       <description>Last 10 notes on Wander Meadow</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Index</title>
+    <link>https://shashankraocoding.github.io/wandermeadow/Index</link>
+    <guid>https://shashankraocoding.github.io/wandermeadow/Index</guid>
+    <description> window.location.href = `www.gwasexplorer.com/Projects/GWASExplorer`;.</description>
+    <pubDate>Fri, 09 May 2025 16:13:50 GMT</pubDate>
+  </item><item>
     <title>GWAS Explorer</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer</link>
     <guid>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer</guid>
     <description> Note Data is not sent to our servers if a tool is marked 🔐! GWAS Explorer Roadmap for those curious 👀 Loading Page.</description>
-    <pubDate>Fri, 09 May 2025 15:57:38 GMT</pubDate>
+    <pubDate>Fri, 09 May 2025 16:01:07 GMT</pubDate>
   </item><item>
     <title>quickPlot</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Projects/quickPlot</link>
@@ -59,12 +65,6 @@
     <guid>https://shashankraocoding.github.io/wandermeadow/Projects/Music</guid>
     <description></description>
     <pubDate>Mon, 05 May 2025 16:27:20 GMT</pubDate>
-  </item><item>
-    <title>SNP_manager</title>
-    <link>https://shashankraocoding.github.io/wandermeadow/Projects/SNP_manager</link>
-    <guid>https://shashankraocoding.github.io/wandermeadow/Projects/SNP_manager</guid>
-    <description> Note This python library is no longer actively maintained, but is still usable as of Python 3.11.0 The Problems this Python Library Addressed are now answered to by my project: GWASExplorer.Com Project Page Summary This is a simple library and related projects made to enable faster and easier worki...</description>
-    <pubDate>Sat, 03 May 2025 17:42:45 GMT</pubDate>
   </item>
     </channel>
   </rss>
