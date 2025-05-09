@@ -70,6 +70,7 @@ function populateAttributeSelectors() {
     [xAttrSelect, yAttrSelect, idAttrSelect].forEach(createOptions); // Add ID selector as well
 }
 
+
 function renderChart() {
     const xAttr = xAttrSelect.value;
     const yAttr = yAttrSelect.value;
@@ -103,10 +104,12 @@ function renderChart() {
         options: {
             plugins: {
                 tooltip: {
+                    enabled: true,
                     callbacks: {
                         label: function(context) {
                             const point = context.raw;
-                            return `ID: ${point.id}, <br> ${xAttr}: ${point.x}, <br> ${yAttr}: ${point.y}`;
+                            // Using <br> for line breaks in the tooltip
+                            return `ID: ${point.id}<br>${xAttr}: ${point.x}<br>${yAttr}: ${point.y}`;
                         }
                     }
                 }
