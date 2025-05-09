@@ -1,7 +1,6 @@
-const script = document.createElement('link');
+const script = document.createElement('script');
 script.src = "https://cdn.jsdelivr.net/npm/chart.js";
 document.head.appendChild(script);
-
 const fileInput = document.getElementById(`file-input`);
 const fileContentDisplay = document.getElementById(`file-content`);
 const messageDisplay = document.getElementById(`message`);
