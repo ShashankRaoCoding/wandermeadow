@@ -1,6 +1,6 @@
 let link = document.createElement("link");
 link.rel = "stylesheet";
-link.href = "https://shashankraocoding.github.io/wandermeadow/Website-Resources/CSS/wandermeadow.css";
+link.href = "https://www.gwasexplorer.com/wandermeadow/Website-Resources/CSS/wandermeadow.css";
 document.head.appendChild(link);
 
 const currentDomain = window.location.hostname;
