@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"01b446c741af0648","type":"group","x":-228,"y":-180,"width":608,"height":577,"label":"QuickPlot"},
+		{"id":"d9168a45aea18f3d","type":"text","text":"Interactively visualise Summary Statistics ","x":-208,"y":-141,"width":250,"height":60},
+		{"id":"2aa76c21f1dcd492","type":"text","text":"Exporting data to required formats for other popular tools ","x":-205,"y":240,"width":243,"height":137},
+		{"id":"3ab03630a476ac35","type":"text","text":"Automated database querying for rsids","x":-204,"y":-20,"width":242,"height":172},
+		{"id":"378118fb6e986b9b","type":"text","text":"Overlay multiple datasets ","x":100,"y":-141,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"836d51698bcd2242","fromNode":"d9168a45aea18f3d","fromSide":"bottom","toNode":"3ab03630a476ac35","toSide":"top"},
+		{"id":"d0a52dff6eb6bd97","fromNode":"3ab03630a476ac35","fromSide":"bottom","toNode":"2aa76c21f1dcd492","toSide":"top"},
+		{"id":"64a9e38910de8ef3","fromNode":"d9168a45aea18f3d","fromSide":"right","toNode":"378118fb6e986b9b","toSide":"left"}
+	]
+}

@@ -6,17 +6,23 @@
       <description>Last 10 notes on Wander Meadow</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Wander Meadow</title>
-    <link>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</link>
-    <guid>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</guid>
-    <description>Hi there! Welcome to the Wander Meadow. This is my garden of digital projects.</description>
-    <pubDate>Fri, 09 May 2025 09:39:53 GMT</pubDate>
+    <title>GWAS Explorer Roadmap</title>
+    <link>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer-Roadmap</link>
+    <guid>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer-Roadmap</guid>
+    <description> These are the plans for the first tool quickPlot. Additional tools are planned.</description>
+    <pubDate>Fri, 09 May 2025 10:10:27 GMT</pubDate>
   </item><item>
     <title>GWAS Explorer</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer</link>
     <guid>https://shashankraocoding.github.io/wandermeadow/Projects/GWAS-Explorer</guid>
     <description> Note Data is not sent to our servers if a tool is marked 🔐! If the something doesn’t work, reload the page.</description>
-    <pubDate>Fri, 09 May 2025 09:31:05 GMT</pubDate>
+    <pubDate>Fri, 09 May 2025 10:00:48 GMT</pubDate>
+  </item><item>
+    <title>Wander Meadow</title>
+    <link>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</link>
+    <guid>https://shashankraocoding.github.io/wandermeadow/Wander-Meadow</guid>
+    <description>Hi there! Welcome to the Wander Meadow. This is my garden of digital projects.</description>
+    <pubDate>Fri, 09 May 2025 09:39:53 GMT</pubDate>
   </item><item>
     <title>Records from Omnisciae</title>
     <link>https://shashankraocoding.github.io/wandermeadow/Projects/Records-from-Omnisciae</link>
@@ -59,12 +65,6 @@
     <guid>https://shashankraocoding.github.io/wandermeadow/Projects/Shankskit</guid>
     <description>Project Page Summary A personal library of useful python functions I have found/built over the years.</description>
     <pubDate>Sat, 03 May 2025 17:42:30 GMT</pubDate>
-  </item><item>
-    <title>ScreenWidgets</title>
-    <link>https://shashankraocoding.github.io/wandermeadow/Projects/ScreenWidgets</link>
-    <guid>https://shashankraocoding.github.io/wandermeadow/Projects/ScreenWidgets</guid>
-    <description>Project Page Summary This is a simple Golang UI application for task management and note-taking on-the-go for Windows 11.</description>
-    <pubDate>Sat, 03 May 2025 17:42:07 GMT</pubDate>
   </item>
     </channel>
   </rss>
