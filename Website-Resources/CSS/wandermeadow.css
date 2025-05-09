@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     border-radius: 10px;
     justify-content: space-evenly;
-    column-gap: 10px;
+    gap: 10px;
 }
 
 .card {
