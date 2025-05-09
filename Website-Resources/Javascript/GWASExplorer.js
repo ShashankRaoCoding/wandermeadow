@@ -6,3 +6,7 @@ document.head.appendChild(link);
 function redirect(url) { 
     window.location.href = `https://www.gwasexplorer.com/${url}`; 
 }
+
+document.getElementsByClassName("readermode")[0].click() 
+
+
