@@ -6,12 +6,6 @@
       <description>Last 10 notes on Wander Meadow</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>index</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/</guid>
-    <description>Welcome to GWASExplorer, hosted on Wander Meadow. You shall be redirected momentarily.</description>
-    <pubDate>Fri, 09 May 2025 16:43:37 GMT</pubDate>
-  </item><item>
     <title>GWAS Explorer</title>
     <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/GWAS-Explorer</link>
     <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/GWAS-Explorer</guid>
@@ -65,6 +59,12 @@
     <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Music</guid>
     <description></description>
     <pubDate>Mon, 05 May 2025 16:27:20 GMT</pubDate>
+  </item><item>
+    <title>SNP_manager</title>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/SNP_manager</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/SNP_manager</guid>
+    <description> Note This python library is no longer actively maintained, but is still usable as of Python 3.11.0 The Problems this Python Library Addressed are now answered to by my project: GWASExplorer.Com Project Page Summary This is a simple library and related projects made to enable faster and easier worki...</description>
+    <pubDate>Sat, 03 May 2025 17:42:45 GMT</pubDate>
   </item>
     </channel>
   </rss>
