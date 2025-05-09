@@ -106,7 +106,7 @@ function renderChart() {
                     callbacks: {
                         label: function(context) {
                             const point = context.raw;
-                            return `ID: ${point.id}, ${xAttr}: ${point.x}, ${yAttr}: ${point.y}`;
+                            return `ID: ${point.id}, <br> ${xAttr}: ${point.x}, <br> ${yAttr}: ${point.y}`;
                         }
                     }
                 }
