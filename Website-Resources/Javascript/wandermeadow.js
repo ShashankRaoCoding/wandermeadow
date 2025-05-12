@@ -1,8 +1,9 @@
+document.onload = function() {
 let link = document.createElement("link");
-link.rel = "stylesheet";
-link.href = "https://www.gwasexplorer.com/Website-Resources/CSS/wandermeadow.css";
-document.head.appendChild(link);
-
+    link.rel = "stylesheet";
+    link.href = "https://www.gwasexplorer.com/Website-Resources/CSS/wandermeadow.css";
+    document.head.appendChild(link);
+};
 // const currentDomain = window.location.hostname;
 
 // if (currentDomain === 'www.gwasexplorer.com') {
