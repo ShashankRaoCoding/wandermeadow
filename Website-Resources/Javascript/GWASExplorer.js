@@ -93,19 +93,27 @@ function plotChart(event) {
 }
 
 function readData(datatext) {
-    SNPData = {};
-    const datalines = datatext.split('\n').filter(line => line.trim().length > 0);
-    attributes = datalines[0].split('\t');
+    fileSNPData = {}; // Initialize an empty object to store SNP data
+    const datalines = datatext.split('\n').filter(line => line.trim().length > 0); // Split by line and remove empty lines
+    attributes = datalines[0].split('\t'); // The first line is the header (attribute names)
 
+    // Create an array to store SNP data
     SNPData = datalines.slice(1).map(line => {
-        const lineparts = line.split('\t');
-        return Object.fromEntries(
-            attributes.map((attr, idx) => [attr, lineparts[idx]])
+        const lineparts = line.split('\t'); // Split the line by tab to get the values for each attribute
+
+        // Create an object for each data point (Object2)
+        const dataPoint = Object.fromEntries(
+            attributes.map((attr, idx) => [attr, lineparts[idx]]) // Map attributes to their values
         );
+
+        return dataPoint; // Return the individual data point object (Object2)
     });
 
+    // Add SNPData (list of Object2) to allSNPData
+    allSNPData.push(SNPData);
+
+    // Collect all unique attributes (for later use)
     allAttributes = [...new Set([...allAttributes, ...attributes])]; // Collect all attributes
-    allSNPData.push(SNPData); 
 }
 
 function renderChart() {
