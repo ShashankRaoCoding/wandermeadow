@@ -84,12 +84,12 @@ function plotChart(event) {
         const reader = new FileReader();
         reader.onload = () => {
             readData(reader.result); // nread and store data 
+            populateAttributeSelectors(); // Ensure this is called after the data is read
+            renderChart(); // Initial chart render
         };
         reader.onerror = () => showMessage(`Error reading file: ${file.name}`, 'error');
         reader.readAsText(file);
     });
-        populateAttributeSelectors(); // Ensure this is called after the data is read
-        renderChart(); // Initial chart render
 }
 
 function readData(datatext) {
