@@ -1,26 +1,30 @@
-let link = document.createElement("link");
-link.rel = "stylesheet";
-link.href = "https://www.gwasexplorer.com/Website-Resources/CSS/wandermeadow.css";
-document.head.appendChild(link);
-
-function redirect(url) { 
-    window.location.href = `https://www.gwasexplorer.com/${url}`; 
-}
-
-document.getElementsByClassName("readermode")[0].click() 
-
-document.onload = function() {
+window.onload = function() {
     let link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = "https://www.gwasexplorer.com/Website-Resources/CSS/wandermeadow.css";
     document.head.appendChild(link);
-    
+};
+// Function to dynamically add Chart.js via CDN
+function loadChartJS() {
+    // Create a script tag
+    let script = document.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/npm/chart.js"; // Chart.js CDN
+    script.type = "text/javascript";
+    script.onload = function() {
+        console.log("Chart.js has been loaded!");
+        // Now you can use Chart.js
+        renderChart(); // Call the function that initializes your chart
+    };
+    document.head.appendChild(script); // Append the script tag to the head
+}
 
-} 
+// Call this function to load Chart.js dynamically
+loadChartJS();
 
-document.getElementByClassName("readermode").click() 
-
-
+const readerModeButton = document.getElementsByClassName("readermode")[0];
+if (readerModeButton) {
+    readerModeButton.click();
+}
 
 const fileInput = document.getElementById('file-input');
 const fileContentDisplay = document.getElementById('file-content');
@@ -31,50 +35,18 @@ const idAttrSelect = document.getElementById('id-attr'); // New selector for ID
 let chart = null;
 let SNPData = {};
 let attributes = [];
+let allAttributes = [];
+let allSNPData = [];
+let colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A1', '#A133FF', '#33FFA1', '#FFA133']; // Example colors
 
-fileInput.addEventListener('change', handleFileSelection);
+fileInput.addEventListener('change', plotChart);
 xAttrSelect.addEventListener('change', renderChart);
 yAttrSelect.addEventListener('change', renderChart);
 idAttrSelect.addEventListener('change', renderChart); // Listen for changes on the ID selector
 
-function handleFileSelection(event) {
-    const file = event.target.files[0];
-    fileContentDisplay.textContent = '';
-    messageDisplay.textContent = '';
-    if (!file) {
-        showMessage('No file selected. Please choose a file.', 'error');
-        return;
-    }
-    if (!file.name.endsWith('.tsv')) {
-        showMessage('Unsupported file type. Please select a TSV file.', 'error');
-        return;
-    }
-    const reader = new FileReader();
-    reader.onload = () => process(reader.result);
-    reader.onerror = () => showMessage('Error reading the file. Please try again.', 'error');
-    reader.readAsText(file);
-}
-
 function showMessage(message, type = 'info') {
     messageDisplay.textContent = message;
     messageDisplay.style.color = type === 'error' ? 'red' : 'green';
-}
-
-function process(datatext) {
-    const datalines = datatext.split('\n').filter(line => line.trim().length > 0);
-    attributes = datalines[0].split('\t');
-
-    // Use map to create SNPData
-    SNPData = datalines.slice(1).map(line => {
-        const lineparts = line.split('\t');
-        return Object.fromEntries(
-            attributes.map((attr, idx) => [attr, lineparts[idx]])
-        );
-    });
-
-    populateAttributeSelectors();
-    renderChart(); // Initial chart
-    showMessage('Successfully loaded data. Choose attributes to plot.', 'success');
 }
 
 function populateAttributeSelectors() {
@@ -90,62 +62,113 @@ function populateAttributeSelectors() {
     [xAttrSelect, yAttrSelect, idAttrSelect].forEach(createOptions); // Add ID selector as well
 }
 
+function plotChart(event) {
+    const files = event.target.files;
+    fileContentDisplay.textContent = '';
+    messageDisplay.textContent = '';
 
-function renderChart() {
-    const xAttr = xAttrSelect.value;
-    const yAttr = yAttrSelect.value;
-    const idAttr = idAttrSelect.value; // Get selected ID attribute
-
-    const chartData = {
-        datasets: [{
-            label: `${yAttr} vs ${xAttr}`,
-            data: [],
-            backgroundColor: 'rgba(75, 192, 192, 0.6)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            pointRadius: 5,
-            pointHoverRadius: 7
-        }]
-    };
-
-    for (let key in SNPData) {
-        const entry = SNPData[key];
-        const xVal = parseFloat(entry[xAttr]);
-        const yVal = parseFloat(entry[yAttr]);
-        const id = entry[idAttr] || ''; // Get the ID value
-
-        chartData.datasets[0].data.push({ x: xVal, y: yVal, id });
+    if (!files.length) {
+        showMessage('No files selected. Please choose at least one TSV file.', 'error');
+        return;
     }
 
-    if (chart) chart.destroy();
-    const ctx = document.getElementById('myChart').getContext('2d');
+    Array.from(files).forEach((file, index) => {
+        if (!file.name.endsWith('.tsv')) {
+            showMessage(`Unsupported file type: ${file.name}. Please select TSV files only.`, 'error');
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = () => {
+            readData(reader.result);
+        };
+        reader.onerror = () => showMessage(`Error reading file: ${file.name}`, 'error');
+        reader.readAsText(file);
+        populateAttributeSelectors(); // Ensure this is called after the data is read
+        renderChart(); // Initial chart render
+    });
+}
+
+function readData(datatext) {
+    SNPData = {};
+    const datalines = datatext.split('\n').filter(line => line.trim().length > 0);
+    attributes = datalines[0].split('\t');
+
+    SNPData = datalines.slice(1).map(line => {
+        const lineparts = line.split('\t');
+        return Object.fromEntries(
+            attributes.map((attr, idx) => [attr, lineparts[idx]])
+        );
+    });
+
+    allAttributes = [...new Set([...allAttributes, ...attributes])]; // Collect all attributes
+    allSNPData = [...allSNPData, ...SNPData]; // Collect all SNP data
+}
+
+function renderChart() {
+    if (!xAttrSelect.value || !yAttrSelect.value || !idAttrSelect.value) return;
+
+    const xAttr = xAttrSelect.value;
+    const yAttr = yAttrSelect.value;
+    const idAttr = idAttrSelect.value;
+
+    // Clean up existing chart before creating a new one
+    if (chart) {
+        chart.destroy();
+    }
+
+    const datasets = [];
+
+    // Group points by file using batches of ~SNPData.length
+    const batchSize = SNPData.length > 0 ? SNPData.length : allSNPData.length;
+    const numberOfDatasets = Math.ceil(allSNPData.length / batchSize);
+
+    for (let i = 0; i < numberOfDatasets; i++) {
+        const batch = allSNPData.slice(i * batchSize, (i + 1) * batchSize);
+        const data = [];
+
+        for (let j = 0; j < batch.length; j++) {
+            const entry = batch[j];
+            const xVal = parseFloat(entry[xAttr]);
+            const yVal = parseFloat(entry[yAttr]);
+            const id = entry[idAttr] || '';
+
+            if (!isNaN(xVal) && !isNaN(yVal)) {
+                data.push({ x: xVal, y: yVal, id });
+            }
+        }
+
+        datasets.push({
+            label: `Dataset ${i + 1}`,
+            data: data,
+            backgroundColor: colors[i % colors.length],
+            borderColor: colors[i % colors.length],
+            pointRadius: 5,
+            pointHoverRadius: 7
+        });
+    }
+
+    const ctx = document.getElementById('scatterplot').getContext('2d');
     chart = new Chart(ctx, {
         type: 'scatter',
-        data: chartData,
+        data: { datasets },
         options: {
-            plugins: {
-                tooltip: {
-                    enabled: true,
-                    callbacks: {
-                        label: function(context) {
-                            const point = context.raw;
-                            // Using ,  for line breaks in the tooltip 
-                            return `ID: ${point.id}, ${xAttr}: ${point.x}, ${yAttr}: ${point.y}`;
-                        }
-                    }
-                }
-            },
+            responsive: true,
             scales: {
                 x: {
-                    title: {
-                        display: true,
-                        text: xAttr
-                    },
-                    type: 'linear'
+                    type: 'linear',
+                    title: { display: true, text: xAttr }
                 },
                 y: {
-                    title: {
-                        display: true,
-                        text: yAttr
+                    type: 'linear',
+                    title: { display: true, text: yAttr }
+                }
+            },
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: (tooltipItems) => `ID: ${tooltipItems[0].raw.id}`,
+                        label: (tooltipItem) => `${xAttr}: ${tooltipItem.raw.x}, ${yAttr}: ${tooltipItem.raw.y}`
                     }
                 }
             }

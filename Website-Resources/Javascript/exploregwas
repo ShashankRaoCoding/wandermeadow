@@ -1,0 +1,13 @@
+<div> 
+    <input type="file" id="file-input" multiple /><br> 
+    <label for="x-attr">X-Axis:</label>
+    <select id="x-attr"></select><br> 
+    <label for="y-attr">Y-Axis:</label>
+    <select id="y-attr"></select><br> 
+    <label for="id-attr">ID:</label> <!-- New label for the ID selector -->
+    <select id="id-attr"></select> <!-- New selector for ID --><br> 
+    <div style="color: white;" id="message"></div>
+    <pre id="file-content"></pre>
+    <canvas id="scatterplot" width="400" height="200"></canvas>
+    <script src="GWASExplorer2.js"></script>
+</div>
