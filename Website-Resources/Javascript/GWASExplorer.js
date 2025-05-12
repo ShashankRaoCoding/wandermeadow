@@ -84,9 +84,9 @@ function plotChart(event) {
         };
         reader.onerror = () => showMessage(`Error reading file: ${file.name}`, 'error');
         reader.readAsText(file);
+    });
         populateAttributeSelectors(); // Ensure this is called after the data is read
         renderChart(); // Initial chart render
-    });
 }
 
 function readData(datatext) {
@@ -117,41 +117,36 @@ function renderChart() {
         chart.destroy();
     }
 
-    const datasets = [];
+    const data = [];
 
-    // Group points by file using batches of ~SNPData.length
-    const batchSize = SNPData.length > 0 ? SNPData.length : allSNPData.length;
-    const numberOfDatasets = Math.ceil(allSNPData.length / batchSize);
+    // Use all SNP data directly without batching
+    allSNPData.forEach(entry => {
+        const xVal = parseFloat(entry[xAttr]);
+        const yVal = parseFloat(entry[yAttr]);
+        const id = entry[idAttr] || '';
 
-    for (let i = 0; i < numberOfDatasets; i++) {
-        const batch = allSNPData.slice(i * batchSize, (i + 1) * batchSize);
-        const data = [];
-
-        for (let j = 0; j < batch.length; j++) {
-            const entry = batch[j];
-            const xVal = parseFloat(entry[xAttr]);
-            const yVal = parseFloat(entry[yAttr]);
-            const id = entry[idAttr] || '';
-
-            if (!isNaN(xVal) && !isNaN(yVal)) {
-                data.push({ x: xVal, y: yVal, id });
-            }
+        // Add data point only if both x and y values are valid
+        if (!isNaN(xVal) && !isNaN(yVal)) {
+            data.push({ x: xVal, y: yVal, id });
         }
+    });
 
-        datasets.push({
-            label: `Dataset ${i + 1}`,
-            data: data,
-            backgroundColor: colors[i % colors.length],
-            borderColor: colors[i % colors.length],
-            pointRadius: 5,
-            pointHoverRadius: 7
-        });
-    }
+    // Create a single dataset using the entire SNPData
+    const dataset = {
+        label: 'SNP Data',
+        data: data,
+        backgroundColor: colors[0], // You can choose a fixed color or randomize it
+        borderColor: colors[0],
+        pointRadius: 5,
+        pointHoverRadius: 7
+    };
 
     const ctx = document.getElementById('scatterplot').getContext('2d');
     chart = new Chart(ctx, {
         type: 'scatter',
-        data: { datasets },
+        data: {
+            datasets: [dataset]  // Only one dataset now
+        },
         options: {
             responsive: true,
             scales: {
@@ -175,4 +170,5 @@ function renderChart() {
         }
     });
 }
+
 
