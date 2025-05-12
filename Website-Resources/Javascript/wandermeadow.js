@@ -3,11 +3,11 @@ link.rel = "stylesheet";
 link.href = "https://www.gwasexplorer.com/wandermeadow/Website-Resources/CSS/wandermeadow.css";
 document.head.appendChild(link);
 
-const currentDomain = window.location.hostname;
+// const currentDomain = window.location.hostname;
 
-if (currentDomain === 'www.gwasexplorer.com') {
-    window.location.href = 'https://www.gwasexplorer.com/Projects/GWAS-Explorer'; // Redirect to the page for www.gwasexplorer.com visitors
-}
+// if (currentDomain === 'www.gwasexplorer.com') {
+//     window.location.href = 'https://www.gwasexplorer.com/Projects/GWAS-Explorer'; // Redirect to the page for www.gwasexplorer.com visitors
+// }
 
 function redirect(url) {
     window.location.href = `https://shashankraocoding.github.io/wandermeadow/${url}`;
