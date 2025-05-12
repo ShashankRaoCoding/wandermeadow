@@ -175,37 +175,31 @@ function renderChart() {
     chart = new Chart(ctx, {
         type: 'scatter',
         data: { datasets },
-    options: {
-        responsive: true,
-        scales: {
-            x: { type: 'linear', title: { display: true, text: xAttr } },
-            y: { type: 'linear', title: { display: true, text: yAttr } }
-        },
-        plugins: {
-            tooltip: {
-                callbacks: {
-                    label: (tooltipItem) => `${xAttr}: ${tooltipItem.raw.x}, ${yAttr}: ${tooltipItem.raw.y}, ${idAttr}: ${tooltipItem.raw.id}`
-                }
+        options: {
+            responsive: true,
+            scales: {
+                x: { type: 'linear', title: { display: true, text: xAttr } },
+                y: { type: 'linear', title: { display: true, text: yAttr } }
             },
-            zoom: {
-                pan: {
-                    enabled: true,
-                    mode: 'xy', // Allow panning in both x and y directions
-                    speed: 10
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: (tooltipItem) => `${xAttr}: ${tooltipItem.raw.x}, ${yAttr}: ${tooltipItem.raw.y}, ${idAttr}: ${tooltipItem.raw.id}`
+                    }
                 },
                 zoom: {
-                    enabled: true,
-                    mode: 'xy', // Allow zooming in both x and y directions
-                    speed: 0.1
+                    pan: {
+                        enabled: true,
+                        mode: 'xy', // Allow panning in both x and y directions
+                        speed: 10
+                    },
+                    zoom: {
+                        enabled: true,
+                        mode: 'xy', // Allow zooming in both x and y directions
+                        speed: 0.1
+                    }
                 }
             }
-        },
-        onClick: (e, activeEls) => {
-            if (activeEls.length > 0) {
-                const point = activeEls[0].element.$context.raw;
-                console.log("Clicked point data:", point);
-            }
         }
-    }
     });
 }
