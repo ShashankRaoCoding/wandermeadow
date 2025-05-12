@@ -9,5 +9,5 @@
     <div style="color: white;" id="message"></div>
     <pre id="file-content"></pre>
     <canvas id="scatterplot" width="400" height="200"></canvas>
-    <script src="GWASExplorer2.js"></script>
+    <script src="GWASExplorer.js"></script>
 </div>

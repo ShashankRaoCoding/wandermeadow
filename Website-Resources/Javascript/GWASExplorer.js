@@ -88,10 +88,7 @@ function plotChart(event) {
             // First file sets expected header
             if (expectedHeader === null) {
                 expectedHeader = header;
-            } else if (header.join() !== expectedHeader.join()) {
-                showMessage(`File "${file.name}" has inconsistent headers. Skipping.`, 'error');
-                return;
-            }
+            } 
 
             const data = readData(lines, header);
             allSNPData.push(data);
