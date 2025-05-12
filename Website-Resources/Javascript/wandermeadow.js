@@ -1,4 +1,4 @@
-document.onload = function() {
+window.onload = function() {
 let link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = "https://www.gwasexplorer.com/Website-Resources/CSS/wandermeadow.css";
