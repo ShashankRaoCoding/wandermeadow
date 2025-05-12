@@ -63,15 +63,18 @@ function populateAttributeSelectors() {
 }
 
 function plotChart(event) {
+    // get files 
     const files = event.target.files;
     fileContentDisplay.textContent = '';
     messageDisplay.textContent = '';
 
+    // check if there are any files 
     if (!files.length) {
         showMessage('No files selected. Please choose at least one TSV file.', 'error');
         return;
     }
 
+    // for each file, read data and add to attributes and SNP data 
     Array.from(files).forEach((file, index) => {
         if (!file.name.endsWith('.tsv')) {
             showMessage(`Unsupported file type: ${file.name}. Please select TSV files only.`, 'error');
@@ -80,7 +83,7 @@ function plotChart(event) {
 
         const reader = new FileReader();
         reader.onload = () => {
-            readData(reader.result);
+            readData(reader.result); // nread and store data 
         };
         reader.onerror = () => showMessage(`Error reading file: ${file.name}`, 'error');
         reader.readAsText(file);
@@ -102,7 +105,7 @@ function readData(datatext) {
     });
 
     allAttributes = [...new Set([...allAttributes, ...attributes])]; // Collect all attributes
-    allSNPData = [...allSNPData, ...SNPData]; // Collect all SNP data
+    allSNPData.push(SNPData); 
 }
 
 function renderChart() {
