@@ -6,65 +6,65 @@
       <description>Last 10 notes on Wander Meadow</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Original Reads</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads</guid>
+    <title>Homepage</title>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads/Homepage</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads/Homepage</guid>
     <description> .hidden-message {display: none;}.container {display: flex;flex-direction: row;flex-wrap: wrap;border-radius: 10px;justify-content: center;gap: 10px; }.card {text-decoration: none;width: 30%;min-width: 200px; height: 100%;border-radius: 10px;background-color: #4abdbd;display: flex;flex-direction: co...</description>
-    <pubDate>Mon, 12 May 2025 18:01:27 GMT</pubDate>
+    <pubDate>Mon, 12 May 2025 18:06:18 GMT</pubDate>
   </item><item>
     <title>Wander Meadow</title>
     <link>https://https://www.gwasexplorer.com/Wander-Meadow/Wander-Meadow</link>
     <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Wander-Meadow</guid>
     <description>Hi there! Welcome to the Wander Meadow. This is my garden of digital projects, home to my personal projects, such as GWASExplorer.</description>
-    <pubDate>Mon, 12 May 2025 17:58:57 GMT</pubDate>
+    <pubDate>Mon, 12 May 2025 18:04:39 GMT</pubDate>
+  </item><item>
+    <title>Homepage</title>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/Homepage</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/Homepage</guid>
+    <description></description>
+    <pubDate>Mon, 12 May 2025 18:03:11 GMT</pubDate>
   </item><item>
     <title>Shankskit</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Shankskit</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Shankskit</guid>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/Shankskit</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/Shankskit</guid>
     <description>Project Page Summary A personal library of useful python functions I have found/built over the years.</description>
     <pubDate>Mon, 12 May 2025 17:34:34 GMT</pubDate>
   </item><item>
     <title>Think Pythonically</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Think-Pythonically</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Think-Pythonically</guid>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads/Think-Pythonically</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads/Think-Pythonically</guid>
     <description>Preface Think Pythonically is a Python tutorial, but unlike other tutorials, here the focus is not on the syntax, but how to think about code in Python.</description>
     <pubDate>Mon, 12 May 2025 17:11:08 GMT</pubDate>
   </item><item>
     <title>Ideate2D</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Ideate2D</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Ideate2D</guid>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/Ideate2D</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/Ideate2D</guid>
     <description>Project Page Summary Update Frequency Links Tags python gamedev coding.</description>
     <pubDate>Mon, 12 May 2025 16:52:52 GMT</pubDate>
   </item><item>
     <title>How to use GWAS Explorer</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/How-to-use-GWAS-Explorer</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/How-to-use-GWAS-Explorer</guid>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/How-to-use-GWAS-Explorer</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/How-to-use-GWAS-Explorer</guid>
     <description>Steps: Step 1: Select the summary statistics files. Ensure that the first row has headers, and successive rows have values.</description>
     <pubDate>Mon, 12 May 2025 09:05:46 GMT</pubDate>
   </item><item>
     <title>GWAS Explorer</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/GWAS-Explorer</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/GWAS-Explorer</guid>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/GWAS-Explorer</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Coding/GWAS-Explorer</guid>
     <description> Note Data is not sent to our servers! This is NOT the GWAS Explorer tool hosted by the NCI! Easily visualise summary statistics, overlay datasets for comparisons, and enjoy seamless database querying for rsids.</description>
     <pubDate>Mon, 12 May 2025 08:59:38 GMT</pubDate>
   </item><item>
     <title>Records from Omnisciae</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Records-from-Omnisciae</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Records-from-Omnisciae</guid>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads/Records-from-Omnisciae</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads/Records-from-Omnisciae</guid>
     <description>Prologue The Keeper of All Stories As white as pristine paper yet to be inked. As bright as the full moon in a clear sky.</description>
     <pubDate>Thu, 08 May 2025 19:55:09 GMT</pubDate>
   </item><item>
     <title>Into the Mind</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Into-the-Mind</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Into-the-Mind</guid>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads/Into-the-Mind</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads/Into-the-Mind</guid>
     <description>Preface: This book (in progress) is written based solely on my understanding of various concepts.</description>
     <pubDate>Thu, 08 May 2025 17:55:13 GMT</pubDate>
-  </item><item>
-    <title>ScreenWidgets</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/ScreenWidgets</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/ScreenWidgets</guid>
-    <description>Project Page Summary This is a simple Golang UI application for task management and note-taking on-the-go for Windows 11.</description>
-    <pubDate>Sat, 03 May 2025 17:42:07 GMT</pubDate>
   </item>
     </channel>
   </rss>
