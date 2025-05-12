@@ -130,33 +130,37 @@ function renderChart() {
 
     const data = [];
 
-    // Use all SNP data directly without batching
-    allSNPData.forEach(entry => {
-        const xVal = parseFloat(entry[xAttr]);
-        const yVal = parseFloat(entry[yAttr]);
-        const id = entry[idAttr] || '';
+    // For each SNP dataset (from each file), process the data
+    allSNPData.forEach((SNPDataSet, idx) => {
+        const dataset = {
+            label: `Dataset ${idx + 1}`,  // Add a label for each dataset (based on file index)
+            data: [],
+            backgroundColor: colors[idx % colors.length], // Cycle through the colors
+            borderColor: colors[idx % colors.length],
+            pointRadius: 5,
+            pointHoverRadius: 7
+        };
 
-        // Add data point only if both x and y values are valid
-        if (!isNaN(xVal) && !isNaN(yVal)) {
-            data.push({ x: xVal, y: yVal, id });
-        }
+        SNPDataSet.forEach(entry => {
+            const xVal = parseFloat(entry[xAttr]);
+            const yVal = parseFloat(entry[yAttr]);
+            const id = entry[idAttr] || '';
+
+            // Add data point only if both x and y values are valid
+            if (!isNaN(xVal) && !isNaN(yVal)) {
+                dataset.data.push({ x: xVal, y: yVal, id });
+            }
+        });
+
+        // Add the dataset to the data array
+        data.push(dataset);
     });
-
-    // Create a single dataset using the entire SNPData
-    const dataset = {
-        label: 'SNP Data',
-        data: data,
-        backgroundColor: colors[0], // You can choose a fixed color or randomize it
-        borderColor: colors[0],
-        pointRadius: 5,
-        pointHoverRadius: 7
-    };
 
     const ctx = document.getElementById('scatterplot').getContext('2d');
     chart = new Chart(ctx, {
         type: 'scatter',
         data: {
-            datasets: [dataset]  // Only one dataset now
+            datasets: data  // Now using multiple datasets
         },
         options: {
             responsive: true,
