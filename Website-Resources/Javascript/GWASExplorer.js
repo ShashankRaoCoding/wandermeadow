@@ -171,8 +171,7 @@ function renderChart() {
             plugins: {
                 tooltip: {
                     callbacks: {
-                        title: (tooltipItems) => `ID: ${tooltipItems[0].raw.id}`,
-                        label: (tooltipItem) => `${xAttr}: ${tooltipItem.raw.x}, ${yAttr}: ${tooltipItem.raw.y}`
+                        label: (tooltipItem) => `${xAttr}: ${tooltipItem.raw.x}, ${yAttr}: ${tooltipItem.raw.y}, ${idAttr}: ${tooltipItem.raw.id}`
                     }
                 }
             },
