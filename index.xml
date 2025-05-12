@@ -10,7 +10,13 @@
     <link>https://https://www.gwasexplorer.com/Wander-Meadow/Wander-Meadow</link>
     <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Wander-Meadow</guid>
     <description>Hi there! Welcome to the Wander Meadow. This is my garden of digital projects, home to my personal projects, such as GWASExplorer.</description>
-    <pubDate>Mon, 12 May 2025 17:31:50 GMT</pubDate>
+    <pubDate>Mon, 12 May 2025 17:43:24 GMT</pubDate>
+  </item><item>
+    <title>Shankskit</title>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Shankskit</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Shankskit</guid>
+    <description>Project Page Summary A personal library of useful python functions I have found/built over the years.</description>
+    <pubDate>Mon, 12 May 2025 17:34:34 GMT</pubDate>
   </item><item>
     <title>Think Pythonically</title>
     <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Think-Pythonically</link>
@@ -36,9 +42,9 @@
     <description> Note Data is not sent to our servers! This is NOT the GWAS Explorer tool hosted by the NCI! Easily visualise summary statistics, overlay datasets for comparisons, and enjoy seamless database querying for rsids.</description>
     <pubDate>Mon, 12 May 2025 08:59:38 GMT</pubDate>
   </item><item>
-    <title>Literature</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Literature</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Literature</guid>
+    <title>Original Reads</title>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Original-Reads</guid>
     <description> Into the Mind Into the Mind explores how humans learn about the world, why we organise as societies, and how we can structure these ideas - wait, what are ideas!? Think Pythonically Other tutorials will teach you python.</description>
     <pubDate>Fri, 09 May 2025 16:41:01 GMT</pubDate>
   </item><item>
@@ -54,17 +60,11 @@
     <description>Preface: This book (in progress) is written based solely on my understanding of various concepts.</description>
     <pubDate>Thu, 08 May 2025 17:55:13 GMT</pubDate>
   </item><item>
-    <title>Music</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Music</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/Music</guid>
-    <description></description>
-    <pubDate>Mon, 05 May 2025 16:27:20 GMT</pubDate>
-  </item><item>
-    <title>SNP_manager</title>
-    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/SNP_manager</link>
-    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/SNP_manager</guid>
-    <description> Note This python library is no longer actively maintained, but is still usable as of Python 3.11.0 The Problems this Python Library Addressed are now answered to by my project: GWASExplorer.Com Project Page Summary This is a simple library and related projects made to enable faster and easier worki...</description>
-    <pubDate>Sat, 03 May 2025 17:42:45 GMT</pubDate>
+    <title>ScreenWidgets</title>
+    <link>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/ScreenWidgets</link>
+    <guid>https://https://www.gwasexplorer.com/Wander-Meadow/Projects/ScreenWidgets</guid>
+    <description>Project Page Summary This is a simple Golang UI application for task management and note-taking on-the-go for Windows 11.</description>
+    <pubDate>Sat, 03 May 2025 17:42:07 GMT</pubDate>
   </item>
     </channel>
   </rss>
